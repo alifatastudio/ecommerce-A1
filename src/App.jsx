@@ -6,6 +6,7 @@ import ProductSlug from "./Pages/Product/Slug";
 import OrderCode from "./Pages/Order/Code";
 import BlogMetodePembayaran from "./Pages/Blog/MetodePembayaran";
 import BlogKonfirmasiPembayaran from "./Pages/Blog/KonfirmasiPembayaran";
+import NotFound from "./Pages/404"
 import "./App.css"
 
 function App() {
@@ -39,12 +40,17 @@ function App() {
 			name: "Home",
 			url: "/", 
 			comp: <Home />
+		},
+		{
+			name: "Not Found",
+			url: "*", 
+			comp: <NotFound />
 		}
 	]
 
  return (
 		<Switch>
-			{router.map(value => <Route key={value.name} path={value.url} children={value.comp} />)}
+			{router.map(value => <Route key={value.name} exact={value.url === "/"? true: false} path={value.url} children={value.comp} />)}
  	</Switch>
  )
 }

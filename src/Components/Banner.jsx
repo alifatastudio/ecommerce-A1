@@ -1,7 +1,7 @@
 import React from "react"
-import FASHIONPRIA from "../Assets/BANNER/FASHIONPRIA.png"
-import FASHIONWANITA from "../Assets/BANNER/FASHIONWANITA.png"
-import FURNITURE from "../Assets/BANNER/FURNITURE.png"
+import FASHIONPRIA from "../Assets/BANNER/3.jpg"
+import FASHIONWANITA from "../Assets/BANNER/2.jpg"
+import FURNITURE from "../Assets/BANNER/1.jpg"
 
 export default function BannerCategory(){
  const [showBanner, setShowBanner] = React.useState(0)

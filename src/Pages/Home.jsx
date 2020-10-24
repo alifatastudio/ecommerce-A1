@@ -4,7 +4,7 @@ import Banner from "../Components/Banner"
 
 export default function Home(){
 	return (
-		<LayoutStore title="Created for Your Satisfaction">
+		<LayoutStore title="Satisfaction Solution">
 			<Banner />
 
 			<p style={{textAlign: "center"}}>
