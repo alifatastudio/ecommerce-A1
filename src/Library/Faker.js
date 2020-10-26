@@ -6,12 +6,13 @@ export const fakeproduct = {
 	price: "",
 	discount: 0,
 	status: "",
-	brandId: "",
-	categoryId: "",
+	brand: "",
+	category: "",
 	description: "",
 	variants: {
+		id: 0,
 		name: "",
-		variant: [{id: 0, name: "", stock: 1, production: 100, imageId: 0}]
+		variant: [{id: 0, name: "", stock: 1, imageId: 0}]
 	},
 	images: [{id: 0, url: ""}]
 }
@@ -24,7 +25,19 @@ export const fakeorder = {
 }
 
 export const fakeloader = {
-	isLoadingTheProduct: true,
+	isLoading: true,
  isError: false,
  errorMessage: ""
+}
+
+export const fakemodalcreate = {
+		isOpen: false
+}
+
+export const fakemodaledit = {
+	isOpen: false, editId: 0,
+}
+
+export const fakemodaldelete = {
+	isOpen: false, deleteId: 0
 }

@@ -3,6 +3,7 @@ import LayoutStore from "../Components/LayoutStore"
 import Banner from "../Components/Banner"
 
 export default function Home(){
+
 	return (
 		<LayoutStore title="Satisfaction Solution">
 			<Banner />

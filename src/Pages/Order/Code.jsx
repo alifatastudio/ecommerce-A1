@@ -3,10 +3,8 @@ import { Link, useParams, useLocation } from "react-router-dom"
 import NumberFormat from "react-number-format"
 import LayoutStore from "../../Components/LayoutStore"
 import Loader from "../../Components/Loader"
-import { fakeproduct } from "../../Library/Faker"
-import { fakeorder } from "../../Library/Faker"
-import { fakeloader } from "../../Library/Faker"
-import GETPRODUCTBYCODE from "../../Services/GETPRODUCTBYCODE"
+import * as Faker from "../../Library/Faker"
+import GETPRODUCTBYCODESERVICE from "../../Services/GETPRODUCTBYCODE"
 
 function useQuery() {
   return new URLSearchParams(useLocation().search);
@@ -17,9 +15,9 @@ export default function OrderCode(){
  const query = useQuery()
  const variantId = query.get("variantId")
  const totalOrder = query.get("totalOrder")
- const [product, setProduct] = React.useState({...fakeproduct})
- const [dataOrder, setDataOrder] = React.useState({...fakeorder})
- const [loader, setLoader] = React.useState({...fakeloader}) 
+ const [product, setProduct] = React.useState({...Faker.fakeproduct})
+ const [dataOrder, setDataOrder] = React.useState({...Faker.fakeorder})
+ const [productLoader, setProductLoader] = React.useState({...Faker.fakeloader}) 
 
  const inputs = [
  	{name: "name", title: "Nama Lengkap", placeholder: "nama lengkap Anda...", value: dataOrder.name},
@@ -44,36 +42,36 @@ export default function OrderCode(){
  }
 
  React.useEffect(() => {
- 	function POPULATEFIRSTDATA(){
+ 	async function POPULATEFIRSTDATA(){
  		try{
- 			const x = GETPRODUCTBYCODE(code)
+ 			const x = await GETPRODUCTBYCODESERVICE(code)
  			
  			setProduct(prevState => {
  				if(x === null){
- 					setLoader(prevState => {
+ 					setProductLoader(prevState => {
 		     const y = "Kesalahal terjadi !! Coba ulangi beberapa saat lagi. Jangan ragu untuk segera hubungi kami : )"
 		      return {
 		      ...prevState,
-		      isLoadingTheProduct: false,
+		      isLoading: false,
 		      isError: true,
 		      errorMessage: y
 		     }
 		    })
 		    return prevState
  				}
- 				setLoader({
-		    ...fakeloader,
-		    isLoadingTheProduct: false,
+ 				setProductLoader({
+		    ...Faker.fakeloader,
+		    isLoading: false,
 		   })
  				return {...x}
  			})
  		}
  		catch(error){
- 			setLoader(prevState => {
+ 			setProductLoader(prevState => {
      const y = "Kesalahal terjadi !! Coba ulangi beberapa saat lagi. Jangan ragu untuk segera hubungi kami : )"
       return {
       ...prevState,
-      isLoadingTheProduct: false,
+      isLoading: false,
       isError: true,
       errorMessage: y
      }
@@ -91,12 +89,12 @@ export default function OrderCode(){
 
  return (
  	<LayoutStore title={"Order " + product.name}>
-			{loader.isError? 
-    <p style={{textAlign: "center" }}>{loader.errorMessage}</p>
+			{productLoader.isError? 
+    <p style={{textAlign: "center" }}>{productLoader.errorMessage}</p>
    :null}
 
-   {loader.isLoadingTheProduct ? <Loader />: 
-    !loader.isError ?
+   {productLoader.isLoading ? <Loader />: 
+    !productLoader.isError ?
 					<div className="w3-row w3-animate-fading-x">
 						<div className="w3-col m6" style={{padding: "10px"}} >
 							<p style={{textAlign: "center"}}><strong>Informasi Pembeli</strong></p>
@@ -133,13 +131,40 @@ export default function OrderCode(){
 								<div className="w3-col m6 l8">
 									<h3>{product.name}</h3>
 									<p>
-										<i style={{fontSize: "18px"}}>
-				       <NumberFormat 
-				        value={product.price} 
-				        displayType={'text'} 
-				        thousandSeparator={true} 
-				        prefix={'Rp '} 
-				       />
+										{product.status.length > 0 ?
+			        <span 
+			         className={`w3-tag ${product.status.toLowerCase() === "sold out"?"w3-theme":"w3-red"}`}
+			        >{product.status}</span>
+			        :null
+			       }
+										<i>
+				       {parseFloat(product.discount) > 0 ?
+	           <b>
+	            <del>
+	             <NumberFormat 
+	              value={product.price} 
+	              displayType={'text'} 
+	              thousandSeparator={true} 
+	              prefix={'Rp '} 
+	             />
+	            </del>
+	            <NumberFormat 
+	             value={((100-parseFloat(product.discount))/100) * parseFloat(product.price)} 
+	             displayType={'text'} 
+	             thousandSeparator={true} 
+	             prefix={'  Rp '} 
+	             decimalScale={0}
+	            />
+	           </b>:
+	           <b>
+	            <NumberFormat 
+	             value={product.price} 
+	             displayType={'text'} 
+	             thousandSeparator={true} 
+	             prefix={'Rp '} 
+	            />
+	           </b>
+	          }
 							   </i>
 						    {product.variants.variant[variantId] === undefined ? null:
 		        	<><br/><i className="fa fa-angle-double-right"></i> {product.variants.name} {product.variants.variant[variantId].name}</>
@@ -148,12 +173,27 @@ export default function OrderCode(){
 										<br/><br/>
 		        
 		        <i style={{fontSize: "19px"}}>
-		        	Total <strong><NumberFormat 
-		           value={product.price*totalOrder} 
-		           displayType={'text'} 
-		           thousandSeparator={true} 
-		           prefix={'Rp '} 
-		        	/></strong>
+		        	Total <strong>
+		        	{parseFloat(product.discount) > 0 ?
+		          <b><i>
+		           <NumberFormat 
+		            value={(((100-parseFloat(product.discount))/100) * parseFloat(product.price)) * totalOrder} 
+		            displayType={'text'} 
+		            thousandSeparator={true} 
+		            prefix={'  Rp '} 
+		            decimalScale={0}
+		           /></i>
+		          </b>:
+		          <b>
+		           <NumberFormat 
+		            value={product.price*totalOrder} 
+		            displayType={'text'} 
+		            thousandSeparator={true} 
+		            prefix={'Rp '} 
+		           />
+		          </b>
+		         }
+		        	</strong>
 		        </i>
 		        
 		        <br/><i>( + biaya pengiriman )</i>

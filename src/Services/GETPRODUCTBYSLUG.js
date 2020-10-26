@@ -1,8 +1,13 @@
-import { ALLPRODUCT } from "./STORE/ALLPRODUCT"
+import Firebase from "../Library/Firebase"
 
-export default function GETPRODUCTBYSLUG(SLUG){
-	const x = ALLPRODUCT.filter(value => value.slug === SLUG)
-	if(x.length <= 0) return null
-	const y = {...x[0]}
-	return y
+export default async function GETPRODUCTBYSLUG(SLUG){
+	const db = Firebase.firestore()
+	const productRef = db.collection('products');
+
+	let productList = []
+	const data = await productRef.where('slug', '==', SLUG).get()
+	data.docs.map(doc => productList.push({ ...doc.data(), id: doc.id }))
+
+	if(productList.length <= 0) return null
+	return productList[0]
 }

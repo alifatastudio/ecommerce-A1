@@ -3,8 +3,7 @@ import { Link } from "react-router-dom"
 import NumberFormat from "react-number-format"
 
 export default function ProductList({
-	products,
-	GETCATEGORYNAMEPRODUCT
+	products
 }){
 	
 	return (
@@ -53,7 +52,7 @@ export default function ProductList({
           }
           <br/>
           <span className="w3-tag w3-theme w3-round-large">
-            #{GETCATEGORYNAMEPRODUCT(value.categoryId)}
+            #{value.category.replace(/\s/g,'')}
           </span>
          </p>
         </div>

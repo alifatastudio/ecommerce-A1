@@ -1,13 +1,20 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import Helmet from "react-helmet"
-import { MENU } from "../Services/STORE/MENU"
+import { MENU } from "../Services/ELOGIE/MENU"
 import Footer from "./Footer"
+import NotFound from "../Pages/404"
 import "./LayoutStore.css"
+
+function useQuery() {
+  return new URLSearchParams(useLocation().search);
+}
 
 export default function LayoutStore(props){
 	const { title } = props
-	const [idMenuShow, setIdMenuShow] = React.useState("")
+	const query = useQuery()
+	const iam = query.get("iam")
+	const [idMenuShow, setIdMenuShow] = React.useState("MENU")
 	const [sidebarShow, setSidebarShow] = React.useState(false)
 
 	const toggleSidebar = () => {
@@ -21,6 +28,7 @@ export default function LayoutStore(props){
 		})
 	}
 
+	if(iam !== "bismillah") return <NotFound />
 	return (
 		<div className="w3-auto layout-wrapper">
 			<Helmet>
@@ -49,7 +57,7 @@ export default function LayoutStore(props){
     			</button>
     			<div id={value.id} className={`w3-bar-block ${idMenuShow === value.id? "w3-show": "w3-hide"} w3-padding-large w3-medium`}>
 		      {value.submenu.map(subvalue => (
-		 						<Link to={"/category/"+subvalue.url} key={subvalue.id}>
+		 						<Link to={"/elogie/"+subvalue.url} key={subvalue.id}>
 		      		<span className="w3-bar-item w3-button w3-light-grey">{subvalue.name}</span>
 		 						</Link>
 		      ))}

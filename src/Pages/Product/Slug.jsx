@@ -1,21 +1,20 @@
 import React from 'react'
 import { useParams, useHistory } from "react-router-dom"
 import NumberFormat from "react-number-format"
-import { fakeproduct } from "../../Library/Faker"
-import { fakeloader } from "../../Library/Faker"
 import LayoutStore from "../../Components/LayoutStore"
 import Loader from "../../Components/Loader"
-import GETPRODUCTBYSLUG from "../../Services/GETPRODUCTBYSLUG"
+import * as Faker from "../../Library/Faker"
+import GETPRODUCTBYSLUGSERVICE from "../../Services/GETPRODUCTBYSLUG"
 
 export default function ProductSLug(){
 	const { slug } = useParams()
 	const history = useHistory()
- const [product, setProduct] = React.useState({...fakeproduct})
+ const [product, setProduct] = React.useState({...Faker.fakeproduct})
  const [imageShow, setImageShow] = React.useState(0)
  const [currentVariant, setCurrentVariant] = React.useState(0)
  const [totalOrder, setTotalOrder] = React.useState(1)
  const [message, setMessage] = React.useState({type: "", message: ""})
- const [loader, setLoader] = React.useState({...fakeloader}) 
+ const [productLoader, setProductLoader] = React.useState({...Faker.fakeloader}) 
   
  const prevImageShow = () => {
  	const max = product.images.length -1
@@ -32,7 +31,7 @@ export default function ProductSLug(){
    	return prevState+1
   })
  }
-
+ 
  const onClickThubnail = idImageShow => () => {
 		setImageShow(idImageShow)
 	}
@@ -87,35 +86,35 @@ export default function ProductSLug(){
  }
 
  React.useEffect(() => {
- 	function POPULATEFIRSTDATA(){
+ 	async function POPULATEFIRSTDATA(){
  		try{
- 			const x = GETPRODUCTBYSLUG(slug)
+ 			const x = await GETPRODUCTBYSLUGSERVICE(slug)
+    
  			setProduct(prevState => {
  				if(x === null){
- 					setLoader(prevState => {
+ 					setProductLoader(prevState => {
 		     const y = "Kesalahal terjadi !! Coba ulangi beberapa saat lagi. Jangan ragu untuk segera hubungi kami : )"
 		      return {
 		      ...prevState,
-		      isLoadingTheProduct: false,
+		      isLoading: false,
 		      isError: true,
 		      errorMessage: y
 		     }
 		    })
 		    return prevState
  				}
- 				setLoader({
-		    ...fakeloader,
-		    isLoadingTheProduct: false,
+ 				setProductLoader({
+		    ...Faker.fakeloader,
+		    isLoading: false,
 		   })
  				return {...x}
  			})
- 		}
- 		catch(error){
- 			setLoader(prevState => {
+ 		} catch(error){
+ 			setProductLoader(prevState => {
      const y = "Kesalahal terjadi !! Coba ulangi beberapa saat lagi. Jangan ragu untuk segera hubungi kami : )"
       return {
       ...prevState,
-      isLoadingTheProduct: false,
+      isLoading: false,
       isError: true,
       errorMessage: y
      }
@@ -129,12 +128,12 @@ export default function ProductSLug(){
 
  return (
  	<LayoutStore title={product.name}>
-   {loader.isError? 
-    <p style={{textAlign: "center" }}>{loader.errorMessage}</p>
+   {productLoader.isError? 
+    <p style={{textAlign: "center" }}>{productLoader.errorMessage}</p>
    :null}
 
- 		{loader.isLoadingTheProduct ? <Loader />: 
-    !loader.isError ?
+ 		{productLoader.isLoading ? <Loader />: 
+    !productLoader.isError ?
      <div className="w3-row w3-animate-fading-x">
    			<div className="w3-col m6">
    				<div className="w3-display-container">
@@ -144,7 +143,7 @@ export default function ProductSLug(){
    								alt="PRODUCT"
    								key={value.id}
    								src={product.images[imageShow].url} 
-   								style={{display: imageShow === value.id?"block":"none"}} 
+   								style={{display: imageShow === parseFloat(value.id)?"block":"none"}} 
    							/>
    					))}
    					<button 
@@ -186,14 +185,48 @@ export default function ProductSLug(){
    					<h1>{product.name}</h1>
    					<p>
    						<i style={{fontSize: "18px"}}>
-          <NumberFormat 
-           value={product.price} 
-           displayType={'text'} 
-           thousandSeparator={true} 
-           prefix={'Rp '} 
-          />
+          {parseFloat(product.discount) > 0 ?
+           <b>
+            <del>
+             <NumberFormat 
+              value={product.price} 
+              displayType={'text'} 
+              thousandSeparator={true} 
+              prefix={'Rp '} 
+             />
+            </del>
+            <NumberFormat 
+             value={((100-parseFloat(product.discount))/100) * parseFloat(product.price)} 
+             displayType={'text'} 
+             thousandSeparator={true} 
+             prefix={'  Rp '} 
+             decimalScale={0}
+            />
+           </b>:
+           <b>
+            <NumberFormat 
+             value={product.price} 
+             displayType={'text'} 
+             thousandSeparator={true} 
+             prefix={'Rp '} 
+            />
+           </b>
+          }
    			   </i>
    			   <br/>
+         {product.status.length > 0 ?
+          <React.Fragment>
+           <span 
+            className={`w3-tag ${product.status.toLowerCase() === "sold out"?"w3-theme":"w3-red"}`}
+           >{product.status}</span>
+           <br/>
+          </React.Fragment>
+          :null
+         }
+         <span className="w3-tag w3-theme w3-round-large">
+          #{product.category.replace(/\s/g,'')}
+         </span>
+         <br/>
    			   <i className="fa fa-angle-double-right"></i> kode produk {product.code}
    		    <br/><i className="fa fa-angle-double-right"></i> {product.variants.variant[currentVariant].stock > 0 ? "tersedia " + product.variants.variant[currentVariant].stock: <i style={{color: "red"}}>Sedang Tidak Tersedia, Sudah Terjual Habis</i>}
    					</p>

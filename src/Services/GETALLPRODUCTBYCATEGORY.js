@@ -1,13 +1,14 @@
-import { ALLPRODUCT } from "./STORE/ALLPRODUCT"
-import { ALLCATEGORY } from "./STORE/ALLCATEGORY"
+import Firebase from "../Library/Firebase"
+import NormalizeCategorySlug from "../Library/NormalizeCategorySlug"
 
-export default function GETALLPRODUCTBYCATEGORY(SLUG){
-	const x1 = ALLCATEGORY.filter(value => value.slug === SLUG)
-	const x2 = x1[0]
-	if(x1.length <= 0) return null
+export default async function GETALLPRODUCTBYCATEGORY(SLUG){
+	const db = Firebase.firestore()
+	const productRef = db.collection('products');
 
-	const y = ALLPRODUCT.filter(value => value.categoryId === x2.id)
-	if(y.length <= 0) return null
+	const x = NormalizeCategorySlug(SLUG)
+	let productList = []
+	const data = await productRef.where('category', '==', x).get()
+	data.docs.map(doc => productList.push({ ...doc.data(), id: doc.id }))
 
-	return y
+	return productList
 }

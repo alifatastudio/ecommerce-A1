@@ -1,54 +1,51 @@
-export const ALLPRODUCT = [
+module.exports = [
 {
-id: 3,
-code: "BATP-BLACK",
-name: "Hitam",
-slug: "basic-tees-black-elogimale-elogie",
-price: 79999,
-discount: 0,
-status: "",
-description: "",
-brandId: 1,
-categoryId: 15,
-variants: {
-name: "Ukuran",
-variant: [
-{
-id: 0,
-name: "All",
-stock: "7",
-production: 100,
-imageId: 0
-},
-{
-id: 1,
-name: "S",
-stock: "3",
-production: 100,
-imageId: null
-},
-{
-id: 2,
-name: "M",
-stock: "3",
-production: 100,
-imageId: null
-},
-{
-id: 3,
-name: "L",
-stock: "3",
-production: 100,
-imageId: null
-},
-{
-id: 4,
-name: "XL",
-stock: "3",
-production: 100,
-imageId: null
-}
-]
+	id: 3,
+	code: "BATP-BLACK",
+	name: "Hitam",
+	slug: "basic-tees-black-elogimale-elogie",
+	price: 79999,
+	discount: 0,
+	status: "",
+	description: "",
+	brandId: 1,
+	categoryId: 15,
+	variants: {
+	name: "Ukuran",
+	variant: [
+		{
+		id: 0,
+		name: "All",
+		stock: "7",
+		imageId: 0
+		},
+		{
+		id: 1,
+		name: "S",
+		stock: "3",
+		imageId: 0
+		},
+		{
+		id: 2,
+		name: "M",
+		stock: "3",
+		imageId: 0
+		},
+		{
+		id: 3,
+		name: "L",
+		stock: "3",
+	
+		imageId: 0
+		},
+		{
+		id: 4,
+		name: "XL",
+		stock: "3",
+	
+		imageId: 0
+		}
+	]
 },
 images: [
 {
@@ -79,36 +76,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "S",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -141,36 +133,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "S",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -189,7 +176,7 @@ url: "https://scontent-cgk1-1.xx.fbcdn.net/v/t1.0-9/120404017_153486389759256_56
 id: 6,
 code: "BATP-COKLATGINGER",
 name: "Coklat Ginger",
-slug: "basic-tees-coklatginger-elogimale-elogie",
+slug: "basic-tees-coklat-ginger-elogimale-elogie",
 price: 79999,
 discount: 0,
 status: null,
@@ -203,36 +190,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "S",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -265,36 +247,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "S",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -327,36 +304,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "S",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -389,36 +361,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "S",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -451,36 +418,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "S",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -513,36 +475,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "S",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -575,36 +532,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "S",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -637,36 +589,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "S",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -699,36 +646,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "S",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -761,36 +703,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "S",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -823,36 +760,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "S",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -885,36 +817,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "S",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -947,36 +874,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "S",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -1009,36 +931,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "S",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -1071,36 +988,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "S",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -1133,36 +1045,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "S",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -1195,35 +1102,30 @@ variant: [
 id: 0,
 name: "All",
 stock: 8,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "Army",
 stock: 2,
-production: 100,
 imageId: 4
 },
 {
 id: 2,
 name: "Teraccora",
 stock: 2,
-production: 100,
 imageId: 2
 },
 {
 id: 3,
 name: "Maroon",
 stock: 2,
-production: 100,
 imageId: 1
 },
 {
 id: 4,
 name: "Khaki",
 stock: 2,
-production: 100,
 imageId: 5
 }
 ]
@@ -1277,35 +1179,30 @@ variant: [
 id: 0,
 name: "All",
 stock: 8,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "Army",
 stock: 2,
-production: 100,
 imageId: 2
 },
 {
 id: 2,
 name: "Milo",
 stock: 2,
-production: 100,
 imageId: 4
 },
 {
 id: 3,
 name: "Teraccora",
 stock: 2,
-production: 100,
 imageId: 6
 },
 {
 id: 4,
 name: "Salem",
 stock: 2,
-production: 100,
 imageId: 5
 }
 ]
@@ -1363,42 +1260,36 @@ variant: [
 id: 0,
 name: "All",
 stock: 0,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "Army",
 stock: 0,
-production: 100,
 imageId: 6
 },
 {
 id: 2,
 name: "Black",
 stock: 0,
-production: 100,
 imageId: 4
 },
 {
 id: 3,
 name: "Coco",
 stock: 0,
-production: 100,
 imageId: 5
 },
 {
 id: 4,
 name: "Dark Grey",
 stock: 0,
-production: 100,
 imageId: 3
 },
 {
 id: 5,
 name: "khaki",
 stock: 0,
-production: 100,
 imageId: 0
 }
 ]
@@ -1452,42 +1343,36 @@ variant: [
 id: 0,
 name: "All",
 stock: 20,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "Army",
 stock: 5,
-production: 100,
 imageId: 0
 },
 {
 id: 2,
 name: "Bronze",
 stock: 5,
-production: 100,
 imageId: 4
 },
 {
 id: 3,
 name: "Cream",
 stock: 5,
-production: 100,
 imageId: 6
 },
 {
 id: 4,
 name: "Mocca",
 stock: 5,
-production: 100,
 imageId: 9
 },
 {
 id: 5,
 name: "Plum",
 stock: 5,
-production: 100,
 imageId: 12
 }
 ]
@@ -1573,56 +1458,48 @@ variant: [
 id: 0,
 name: "All",
 stock: 20,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "Plum",
 stock: 5,
-production: 100,
 imageId: 7
 },
 {
 id: 2,
 name: "Macha",
 stock: 5,
-production: 100,
 imageId: 5
 },
 {
 id: 3,
 name: "Cream",
 stock: 5,
-production: 100,
 imageId: 9
 },
 {
 id: 4,
 name: "Bronze",
 stock: 0,
-production: 100,
 imageId: 0
 },
 {
 id: 5,
 name: "Maroon",
 stock: 0,
-production: 100,
 imageId: 2
 },
 {
 id: 6,
 name: "Avocado",
 stock: 5,
-production: 100,
 imageId: 9
 },
 {
 id: 7,
 name: "Broken White",
 stock: 0,
-production: 100,
 imageId: 14
 }
 ]
@@ -1708,57 +1585,49 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "29",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "30",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "31",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "32",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "33",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "34",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -1803,57 +1672,49 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "29",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "30",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "31",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "32",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "33",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "34",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -1898,57 +1759,49 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "29",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "30",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "31",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "32",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "33",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "34",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -1993,57 +1846,49 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "29",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "30",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "31",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "32",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "33",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "34",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -2088,57 +1933,49 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "29",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "30",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "31",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "32",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "33",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "34",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -2183,57 +2020,49 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "29",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "30",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "31",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "32",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "33",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "34",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -2278,113 +2107,97 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "29",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "30",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "31",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "32",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "33",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "34",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 8,
 name: "35",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 9,
 name: "36",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 10,
 name: "37",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 11,
 name: "38",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 12,
 name: "39",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 13,
 name: "40",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 14,
 name: "41",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 15,
 name: "42",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -2421,113 +2234,97 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "29",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "30",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "31",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "32",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "33",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "34",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 8,
 name: "35",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 9,
 name: "36",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 10,
 name: "37",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 11,
 name: "38",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 12,
 name: "39",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 13,
 name: "40",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 14,
 name: "41",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 15,
 name: "42",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -2564,113 +2361,97 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "29",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "30",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "31",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "32",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "33",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "34",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 8,
 name: "35",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 9,
 name: "36",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 10,
 name: "37",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 11,
 name: "38",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 12,
 name: "39",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 13,
 name: "40",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 14,
 name: "41",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 15,
 name: "42",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -2707,113 +2488,97 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "29",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "30",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "31",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "32",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "33",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "34",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 8,
 name: "35",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 9,
 name: "36",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 10,
 name: "37",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 11,
 name: "38",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 12,
 name: "39",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 13,
 name: "40",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 14,
 name: "41",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 15,
 name: "42",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -2850,113 +2615,97 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "29",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "30",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "31",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "32",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "33",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "34",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 8,
 name: "35",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 9,
 name: "36",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 10,
 name: "37",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 11,
 name: "38",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 12,
 name: "39",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 13,
 name: "40",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 14,
 name: "41",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 15,
 name: "42",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -2993,113 +2742,97 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "29",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "30",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "31",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "32",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "33",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "34",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 8,
 name: "35",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 9,
 name: "36",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 10,
 name: "37",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 11,
 name: "38",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 12,
 name: "39",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 13,
 name: "40",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 14,
 name: "41",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 15,
 name: "42",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -3136,113 +2869,97 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "29",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "30",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "31",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "32",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "33",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "34",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 8,
 name: "35",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 9,
 name: "36",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 10,
 name: "37",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 11,
 name: "38",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 12,
 name: "39",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 13,
 name: "40",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 14,
 name: "41",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 15,
 name: "42",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -3279,113 +2996,97 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "29",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "30",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "31",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "32",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "33",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "34",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 8,
 name: "35",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 9,
 name: "36",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 10,
 name: "37",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 11,
 name: "38",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 12,
 name: "39",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 13,
 name: "40",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 14,
 name: "41",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 15,
 name: "42",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -3422,113 +3123,97 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "29",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "30",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "31",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "32",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "33",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "34",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 8,
 name: "35",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 9,
 name: "36",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 10,
 name: "37",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 11,
 name: "38",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 12,
 name: "39",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 13,
 name: "40",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 14,
 name: "41",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 15,
 name: "42",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -3565,113 +3250,97 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "29",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "30",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "31",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "32",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "33",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "34",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 8,
 name: "35",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 9,
 name: "36",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 10,
 name: "37",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 11,
 name: "38",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 12,
 name: "39",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 13,
 name: "40",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 14,
 name: "41",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 15,
 name: "42",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -3708,113 +3377,97 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "29",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "30",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "31",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "32",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "33",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "34",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 8,
 name: "35",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 9,
 name: "36",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 10,
 name: "37",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 11,
 name: "38",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 12,
 name: "39",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 13,
 name: "40",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 14,
 name: "41",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 15,
 name: "42",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -3851,36 +3504,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "30",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "32",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "34",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -3909,36 +3557,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "30",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "32",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "34",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -3967,36 +3610,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "30",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "32",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "34",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -4025,36 +3663,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "30",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "32",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "34",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -4083,36 +3716,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "30",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "32",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "34",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -4141,36 +3769,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "30",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "32",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "34",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -4199,36 +3822,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "30",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "32",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "34",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -4257,36 +3875,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "30",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "32",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "34",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -4315,36 +3928,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "30",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "32",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "34",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -4373,36 +3981,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "30",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "32",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "34",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -4431,36 +4034,31 @@ variant: [
 id: 0,
 name: "All",
 stock: 19,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: 5,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "30",
 stock: 5,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "32",
 stock: 5,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "34",
 stock: 5,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -4513,36 +4111,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "30",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "32",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "34",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -4595,36 +4188,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "30",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "32",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "34",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -4677,36 +4265,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "30",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "32",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "34",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -4759,36 +4342,31 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "30",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "32",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "34",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -4841,29 +4419,25 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -4900,29 +4474,25 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -4959,29 +4529,25 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -5018,29 +4584,25 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -5077,29 +4639,25 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -5140,29 +4698,25 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -5203,29 +4757,25 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -5266,29 +4816,25 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -5325,29 +4871,25 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -5376,29 +4918,25 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -5427,29 +4965,25 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -5478,29 +5012,25 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -5529,29 +5059,25 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -5580,29 +5106,25 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -5631,29 +5153,25 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -5682,29 +5200,25 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -5733,49 +5247,42 @@ variant: [
 id: 0,
 name: "All",
 stock: 15,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "Army",
 stock: 1,
-production: 100,
 imageId: 4
 },
 {
 id: 2,
 name: "Mustard",
 stock: 5,
-production: 100,
 imageId: 7
 },
 {
 id: 3,
 name: "Grey",
 stock: 4,
-production: 100,
 imageId: 7
 },
 {
 id: 4,
 name: "Peace",
 stock: 2,
-production: 100,
 imageId: 7
 },
 {
 id: 5,
 name: "Lylac",
 stock: 2,
-production: 100,
 imageId: 7
 },
 {
 id: 6,
 name: "Lavender",
 stock: 1,
-production: 100,
 imageId: 0
 }
 ]
@@ -5833,84 +5340,72 @@ variant: [
 id: 0,
 name: "All",
 stock: 15,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "Denim",
 stock: 0,
-production: 100,
 imageId: 0
 },
 {
 id: 2,
 name: "Silver",
 stock: 0,
-production: 100,
 imageId: 1
 },
 {
 id: 3,
 name: "Tosca",
 stock: 0,
-production: 100,
 imageId: 10
 },
 {
 id: 4,
 name: "Dusty Pink",
 stock: 9,
-production: 100,
 imageId: 7
 },
 {
 id: 5,
 name: "Grey",
 stock: 9,
-production: 100,
 imageId: 11
 },
 {
 id: 6,
 name: "Black",
 stock: 4,
-production: 100,
 imageId: 13
 },
 {
 id: 7,
 name: "Dark Grey",
 stock: 7,
-production: 100,
 imageId: 12
 },
 {
 id: 8,
 name: "Navy",
 stock: 0,
-production: 100,
 imageId: 4
 },
 {
 id: 9,
 name: "Emerald",
 stock: 0,
-production: 100,
 imageId: 3
 },
 {
 id: 10,
 name: "Purple",
 stock: 9,
-production: 100,
 imageId: 8
 },
 {
 id: 11,
 name: "Misty Black",
 stock: 1,
-production: 100,
 imageId: 9
 }
 ]
@@ -5992,28 +5487,24 @@ variant: [
 id: 0,
 name: "All",
 stock: 27,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "Grey",
 stock: 9,
-production: 100,
 imageId: 4
 },
 {
 id: 2,
 name: "Dark Grey",
 stock: 9,
-production: 100,
 imageId: 5
 },
 {
 id: 3,
 name: "Turquois",
 stock: 9,
-production: 100,
 imageId: 3
 }
 ]
@@ -6063,28 +5554,24 @@ variant: [
 id: 0,
 name: "All",
 stock: 0,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "Denim",
 stock: 0,
-production: 100,
 imageId: 2
 },
 {
 id: 2,
 name: "Grey",
 stock: 0,
-production: 100,
 imageId: 4
 },
 {
 id: 3,
 name: "Mocca",
 stock: 0,
-production: 100,
 imageId: 0
 }
 ]
@@ -6142,42 +5629,36 @@ variant: [
 id: 0,
 name: "All",
 stock: 0,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "Dusty Pink",
 stock: 0,
-production: 100,
 imageId: 0
 },
 {
 id: 2,
 name: "Black",
 stock: 0,
-production: 100,
 imageId: 1
 },
 {
 id: 3,
 name: "Silver",
 stock: 0,
-production: 100,
 imageId: 3
 },
 {
 id: 4,
 name: "Lylac",
 stock: 0,
-production: 100,
 imageId: 7
 },
 {
 id: 5,
 name: "Olive",
 stock: 0,
-production: 100,
 imageId: 5
 }
 ]
@@ -6239,147 +5720,126 @@ variant: [
 id: 0,
 name: "All",
 stock: 0,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "Dark Grey",
 stock: 0,
-production: 100,
 imageId: 7
 },
 {
 id: 2,
 name: "Dark Coco",
 stock: 0,
-production: 100,
 imageId: 3
 },
 {
 id: 3,
 name: "Black",
 stock: 0,
-production: 100,
 imageId: 4
 },
 {
 id: 4,
 name: "Silver",
 stock: 0,
-production: 100,
 imageId: 2
 },
 {
 id: 5,
 name: "Dusty Pink",
 stock: 0,
-production: 100,
 imageId: 6
 },
 {
 id: 6,
 name: "Coklat Terasi",
 stock: 0,
-production: 100,
 imageId: 0
 },
 {
 id: 7,
 name: "Army",
 stock: 0,
-production: 100,
 imageId: 5
 },
 {
 id: 8,
 name: "Navy",
 stock: 0,
-production: 100,
 imageId: 0
 },
 {
 id: 9,
 name: "Maroon",
 stock: 0,
-production: 100,
 imageId: 0
 },
 {
 id: 10,
 name: "Milo",
 stock: 0,
-production: 100,
 imageId: 0
 },
 {
 id: 11,
 name: "Mocca",
 stock: 0,
-production: 100,
 imageId: 0
 },
 {
 id: 12,
 name: "Olive",
 stock: 0,
-production: 100,
 imageId: 0
 },
 {
 id: 13,
 name: "Dusty Purple",
 stock: 0,
-production: 100,
 imageId: 0
 },
 {
 id: 14,
 name: "Mustard",
 stock: 0,
-production: 100,
 imageId: 0
 },
 {
 id: 15,
 name: "Grey",
 stock: 0,
-production: 100,
 imageId: 0
 },
 {
 id: 16,
 name: "Rose",
 stock: 0,
-production: 100,
 imageId: 0
 },
 {
 id: 17,
 name: "Rosewood",
 stock: 0,
-production: 100,
 imageId: 0
 },
 {
 id: 18,
 name: "Caramel",
 stock: 0,
-production: 100,
 imageId: 0
 },
 {
 id: 19,
 name: "Cedar",
 stock: 0,
-production: 100,
 imageId: 0
 },
 {
 id: 20,
 name: "Mauve",
 stock: 0,
-production: 100,
 imageId: 0
 }
 ]
@@ -6568,50 +6028,43 @@ variant: [
 id: 0,
 name: "All",
 stock: 39,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 10,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 10,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 7,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 10,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -6660,50 +6113,43 @@ variant: [
 id: 0,
 name: "All",
 stock: 27,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 7,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 14,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -6752,50 +6198,43 @@ variant: [
 id: 0,
 name: "All",
 stock: 99,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 23,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 22,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 23,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 16,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 11,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -6848,50 +6287,43 @@ variant: [
 id: 0,
 name: "All",
 stock: 163,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 4,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 25,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 28,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 25,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 69,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 12,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -6948,50 +6380,43 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 8,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 6,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 4,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -7044,50 +6469,43 @@ variant: [
 id: 0,
 name: "All",
 stock: 18,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 15,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -7144,50 +6562,43 @@ variant: [
 id: 0,
 name: "All",
 stock: 5,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 4,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 4,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -7240,50 +6651,43 @@ variant: [
 id: 0,
 name: "All",
 stock: 22,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 10,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 4,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 4,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -7340,50 +6744,43 @@ variant: [
 id: 0,
 name: "All",
 stock: 62,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 8,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 10,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 16,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 18,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 10,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -7436,50 +6833,43 @@ variant: [
 id: 0,
 name: "All",
 stock: 90,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 5,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 12,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 8,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 33,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 32,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -7532,50 +6922,43 @@ variant: [
 id: 0,
 name: "All",
 stock: 48,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 11,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 16,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 10,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -7632,50 +7015,43 @@ variant: [
 id: 0,
 name: "All",
 stock: 96,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 9,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 17,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 21,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 26,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 23,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -7732,50 +7108,43 @@ variant: [
 id: 0,
 name: "All",
 stock: 19,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 33,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 13,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 11,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 17,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -7828,50 +7197,43 @@ variant: [
 id: 0,
 name: "All",
 stock: 19,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 5,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 5,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 7,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 19,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 23,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -7928,50 +7290,43 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 11,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 29,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -8028,50 +7383,43 @@ variant: [
 id: 0,
 name: "All",
 stock: 11,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 4,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 1,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 1,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 1,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -8116,50 +7464,43 @@ variant: [
 id: 0,
 name: "All",
 stock: 15,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 1,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 6,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 6,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -8204,50 +7545,43 @@ variant: [
 id: 0,
 name: "All",
 stock: 0,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -8296,57 +7630,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 7,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 14,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 12,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 19,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 17,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -8403,57 +7729,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 12,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 16,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 31,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 21,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 16,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 5,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -8510,57 +7828,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 1,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 1,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -8613,57 +7923,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 12,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 10,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 1,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 1,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -8716,57 +8018,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 9,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 8,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 4,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 5,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -8827,57 +8121,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 11,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 7,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -8942,57 +8228,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 6,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 6,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -9049,57 +8327,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 3,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 1,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -9156,57 +8426,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 5,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 12,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 12,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -9263,57 +8525,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 10,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 1,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 1,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 6,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 9,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 6,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -9374,57 +8628,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 5,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 4,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 4,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -9481,57 +8727,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 11,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 5,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 16,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 21,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 14,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -9588,57 +8826,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 25,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 11,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 32,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 10,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -9687,57 +8917,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 8,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 7,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 10,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 10,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -9798,57 +9020,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 5,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 21,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 8,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 1,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 1,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -9905,57 +9119,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 7,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 1,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 6,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 6,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 11,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 5,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -10008,57 +9214,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 6,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 12,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 7,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 7,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -10111,57 +9309,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 8,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 4,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 7,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 5,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -10222,57 +9412,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 7,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 11,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 12,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 11,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 6,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -10333,57 +9515,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 4,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 4,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -10440,57 +9614,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 5,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 9,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 20,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 14,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -10547,57 +9713,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 10,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 6,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 18,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -10662,57 +9820,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 22,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 22,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 18,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 35,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 22,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -10773,57 +9923,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 0,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -10880,57 +10022,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 12,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 8,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 18,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 21,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 9,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -10987,57 +10121,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 1,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 1,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -11094,57 +10220,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 1,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 4,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 6,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 4,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -11201,57 +10319,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 4,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 9,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 6,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 4,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 13,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -11308,57 +10418,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 0,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -11415,57 +10517,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 19,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 4,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -11518,57 +10612,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 5,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -11625,57 +10711,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 17,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 7,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 23,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 23,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 4,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -11736,57 +10814,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 14,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 7,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 16,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 1,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -11847,57 +10917,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 4,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 15,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 15,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 42,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 27,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -11958,57 +11020,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 9,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -12065,57 +11119,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 17,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 7,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 15,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -12172,57 +11218,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 5,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 7,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 9,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -12279,57 +11317,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 0,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -12386,57 +11416,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 9,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 7,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 8,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -12497,57 +11519,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 5,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 5,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -12608,57 +11622,49 @@ variant: [
 id: 0,
 name: "All",
 stock: 5,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 5,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 6,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "45",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -12715,50 +11721,43 @@ variant: [
 id: 0,
 name: "All",
 stock: 5,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 1,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -12807,50 +11806,43 @@ variant: [
 id: 0,
 name: "All",
 stock: 19,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 4,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 4,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -12895,50 +11887,43 @@ variant: [
 id: 0,
 name: "All",
 stock: 16,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 2,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -12983,50 +11968,43 @@ variant: [
 id: 0,
 name: "All",
 stock: 10,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "39",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "40",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "41",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "42",
 stock: 0,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "43",
 stock: 1,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "44",
 stock: 6,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -13067,57 +12045,49 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "29",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "30",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "31",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "32",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "33",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "34",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -13154,57 +12124,49 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "29",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "30",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "31",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "32",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "33",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "34",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -13241,57 +12203,49 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "29",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "30",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "31",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "32",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "33",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "34",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -13328,57 +12282,49 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "29",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "30",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "31",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "32",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "33",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "34",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -13415,57 +12361,49 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "29",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "30",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "31",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "32",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "33",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "34",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -13502,57 +12440,49 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "29",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "30",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "31",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "32",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "33",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "34",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -13589,57 +12519,49 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "29",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "30",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "31",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "32",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "33",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "34",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -13676,57 +12598,49 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "28",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "29",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "30",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 4,
 name: "31",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 5,
 name: "32",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 6,
 name: "33",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 7,
 name: "34",
 stock: 3,
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -13763,29 +12677,25 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -13818,29 +12728,25 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -13873,29 +12779,25 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -13928,29 +12830,25 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -13983,29 +12881,25 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -14038,29 +12932,25 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -14093,29 +12983,25 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -14148,29 +13034,25 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -14203,29 +13085,25 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -14258,29 +13136,25 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -14313,29 +13187,25 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -14368,29 +13238,25 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -14423,29 +13289,25 @@ variant: [
 id: 0,
 name: "All",
 stock: "7",
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "M",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 2,
 name: "L",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 },
 {
 id: 3,
 name: "XL",
 stock: "3",
-production: 100,
-imageId: null
+imageId: 0
 }
 ]
 },
@@ -14478,35 +13340,30 @@ variant: [
 id: 0,
 name: "All",
 stock: 8,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "Army",
 stock: 2,
-production: 100,
 imageId: 2
 },
 {
 id: 2,
 name: "Red",
 stock: 2,
-production: 100,
 imageId: 4
 },
 {
 id: 3,
 name: "Milo",
 stock: 2,
-production: 100,
 imageId: 3
 },
 {
 id: 4,
 name: "Salem",
 stock: 2,
-production: 100,
 imageId: 5
 }
 ]
@@ -14568,21 +13425,18 @@ variant: [
 id: 0,
 name: "All",
 stock: 3,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "Mustard",
 stock: 2,
-production: 100,
 imageId: 2
 },
 {
 id: 2,
 name: "Navy",
 stock: 1,
-production: 100,
 imageId: 9
 }
 ]
@@ -14648,21 +13502,18 @@ variant: [
 id: 0,
 name: "All",
 stock: 10,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "Mustard",
 stock: 5,
-production: 100,
 imageId: 1
 },
 {
 id: 2,
 name: "Navy",
 stock: 5,
-production: 100,
 imageId: 6
 }
 ]
@@ -14732,42 +13583,36 @@ variant: [
 id: 0,
 name: "All",
 stock: 2,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "Army",
 stock: 0,
-production: 100,
 imageId: 6
 },
 {
 id: 2,
 name: "Black",
 stock: 1,
-production: 100,
 imageId: 3
 },
 {
 id: 3,
 name: "Coco",
 stock: 0,
-production: 100,
 imageId: 4
 },
 {
 id: 4,
 name: "Dark Grey",
 stock: 0,
-production: 100,
 imageId: 0
 },
 {
 id: 5,
 name: "Khaki",
 stock: 1,
-production: 100,
 imageId: 5
 }
 ]
@@ -14825,42 +13670,36 @@ variant: [
 id: 0,
 name: "All",
 stock: 0,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "Army",
 stock: 0,
-production: 100,
 imageId: 7
 },
 {
 id: 2,
 name: "Black",
 stock: 0,
-production: 100,
 imageId: 4
 },
 {
 id: 3,
 name: "Coco",
 stock: 0,
-production: 100,
 imageId: 0
 },
 {
 id: 4,
 name: "Dark Grey",
 stock: 0,
-production: 100,
 imageId: 6
 },
 {
 id: 5,
 name: "Khaki",
 stock: 0,
-production: 100,
 imageId: 8
 }
 ]
@@ -14926,35 +13765,30 @@ variant: [
 id: 0,
 name: "All",
 stock: 15,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "Coco",
 stock: 5,
-production: 100,
 imageId: 7
 },
 {
 id: 2,
 name: "Maroon",
 stock: 5,
-production: 100,
 imageId: 0
 },
 {
 id: 3,
 name: "Navy",
 stock: 5,
-production: 100,
 imageId: 2
 },
 {
 id: 4,
 name: "White",
 stock: 0,
-production: 100,
 imageId: 4
 }
 ]
@@ -15016,35 +13850,30 @@ variant: [
 id: 0,
 name: "All",
 stock: 15,
-production: 100,
 imageId: 0
 },
 {
 id: 1,
 name: "Coco",
 stock: 5,
-production: 100,
 imageId: 7
 },
 {
 id: 2,
 name: "Maroon",
 stock: 5,
-production: 100,
 imageId: 0
 },
 {
 id: 3,
 name: "Navy",
 stock: 5,
-production: 100,
 imageId: 2
 },
 {
 id: 4,
 name: "White",
 stock: 0,
-production: 100,
 imageId: 4
 }
 ]
