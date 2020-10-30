@@ -1,31 +1,45 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import Helmet from "react-helmet"
-import { MENU } from "../Services/STORE/MENU"
+import _ from "lodash"
 import Footer from "./Footer"
 import "./LayoutStore.css"
+import * as Faker from "../Library/Faker"
+import GETAPPINFOSERVICE from "../Services/GETAPPINFO"
+import GETALLCATEGORYSERVICE from "../Services/GETALLCATEGORY"
 
 export default function LayoutStore(props){
 	const { title } = props
-	const [idMenuShow, setIdMenuShow] = React.useState("")
 	const [sidebarShow, setSidebarShow] = React.useState(false)
+	const [appInfo, setAppInfo] = React.useState({...Faker.fakeappInfo})
+	const [allCategory, setAllCategory] = React.useState([])
 
 	const toggleSidebar = () => {
 		setSidebarShow(prevState => !prevState)
 	}
 
-	const showThisId = idMenuShow => () => {
-		setIdMenuShow(prevState => {
-			if(prevState === idMenuShow) return ""
-			return idMenuShow
-		})
-	}
+	React.useEffect(() => {
+		async function POPULATEFIRSTDATA(){
+			try{
+				const appInfo = await GETAPPINFOSERVICE()
+				setAppInfo({...appInfo})
+
+				const categories = await GETALLCATEGORYSERVICE()	
+				const y = _.sortBy(categories, "name")
+				setAllCategory([...y])
+			} catch(error){
+				console.log(error)
+			}
+		}
+
+		POPULATEFIRSTDATA()
+	}, [])
 
 	return (
 		<div className="w3-auto layout-wrapper">
 			<Helmet>
-    <title>ELOGIE | {title}</title>
-    <meta name="description" content="ELOGIE" />
+    <title>{appInfo.name + " | " + title}</title>
+    <meta name="description" content="no content" />
    </Helmet>
 
 			<nav className="w3-sidebar sidebar w3-bar-block w3-theme-white w3-collapse w3-top" style={{zIndex:"3",width:"250px", display: sidebarShow?"block":"none"}} id="mySidebar">
@@ -42,28 +56,14 @@ export default function LayoutStore(props){
 					<Link to="/">
 						<span className="w3-bar-item w3-button w3-light-grey">Home</span>
 					</Link>
-			  {MENU.map(value => (
-    		<React.Fragment key={value.id}>
-    			<button onClick={showThisId(value.id)} className="w3-button w3-block w3-white w3-left-align" id="myBtn">
-      		{value.name} <i className="fa fa-caret-down"></i>
-    			</button>
-    			<div id={value.id} className={`w3-bar-block ${idMenuShow === value.id? "w3-show": "w3-hide"} w3-padding-large w3-medium`}>
-		      {value.submenu.map(subvalue => (
-		 						<Link to={"/category/"+subvalue.url} key={subvalue.id}>
-		      		<span className="w3-bar-item w3-button w3-light-grey">{subvalue.name}</span>
-		 						</Link>
-		      ))}
-			    </div>
-    		</React.Fragment>
-		   ))}
+					{allCategory.map(value => (
+						<Link to={"/category/"+value.urlSlug} key={value.id}>
+     		<span className="w3-bar-item w3-button w3-light-grey" onClick={toggleSidebar}>
+     		{value.name}
+     		</span>
+						</Link>
+					))}
 			 </div>
-
-	  	<Link to="/blog/metode-pembayaran">
-		  	<span className="w3-bar-item w3-button w3-padding">metode pembayaran</span> 
-	  	</Link>
-	  	<Link to="/blog/konfirmasi-pembayaran">
-		  	<span className="w3-bar-item w3-button w3-padding">konfirmasi pembayaran</span> 
-	  	</Link>
 			</nav>
 
 			<header className="w3-bar w3-top w3-hide-large w3-theme w3-xlarge">
@@ -92,7 +92,7 @@ export default function LayoutStore(props){
 			 {props.children}
 
 			 <div style={{height: "55px"}} />
- 			<Footer />
+ 			<Footer appinfo={appInfo} />
 			</div>
 		</div>
 	)

@@ -1,4 +1,10 @@
-## ELOGIE
+## ECOMMERCE A1 | Standar E-Commerce Website App
+
+contact me for this web. I sell it, I will help the installation for you.
+
+### `my contact`
+whatsapp [+62 858 7520 4463](http://wa.me/6285875204463)
+Instagram [@alifatav](http://instagram.com/alifatav)
 
 <!-- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

@@ -13,6 +13,8 @@ export default async function CREATEPRODUCT(RESOURCE){
 		status: RESOURCE.status,
 		brand: RESOURCE.brand,
 		category: RESOURCE.category,
+		tags: RESOURCE.tags,
+		inventoryStatus: RESOURCE.inventoryStatus,
 		description: RESOURCE.description,
 		variants: RESOURCE.variants,
 		images: RESOURCE.images

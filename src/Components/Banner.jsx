@@ -1,17 +1,15 @@
 import React from "react"
-import FASHIONPRIA from "../Assets/BANNER/3.jpg"
-import FASHIONWANITA from "../Assets/BANNER/2.jpg"
-import FURNITURE from "../Assets/BANNER/1.jpg"
+import _ from "lodash"
+import GETALLBANNERSERVICE from "../Services/GETALLBANNER"
 
 export default function BannerCategory(){
  const [showBanner, setShowBanner] = React.useState(0)
-
- const banner = [ FASHIONPRIA, FASHIONWANITA, FURNITURE ]
+ const [allBanner, setAllBanner] = React.useState([])
 
  React.useEffect(() => {
   const x = setInterval(() => {
    setShowBanner(prevState => {
-    const max = banner.length - 1
+    const max = allBanner.length - 1
     if(prevState === max) return 0
     return prevState + 1
    })
@@ -20,13 +18,27 @@ export default function BannerCategory(){
   return () => clearInterval(x)
  })
 
+ React.useEffect(() => {
+  async function POPULATEFIRSTDATA(){
+   try {
+    const banner = await GETALLBANNERSERVICE()
+    const y = _.sortBy(banner, "name")
+    setAllBanner([...y])
+   } catch(error){
+    console.log(error)
+   }
+  }
+
+  POPULATEFIRSTDATA()
+ }, [])
+
 	return (
   <div className="w3-container">
-   {banner.map((value, index) => (
+   {allBanner.map((value, index) => (
     <img
-     key={value}
+     key={value.id}
      className="w3-animate-fading w3-round-large w3-card"
-     src={value} 
+     src={value.imageUrl} 
      alt="Banner" 
      style={{
       width:"100%",

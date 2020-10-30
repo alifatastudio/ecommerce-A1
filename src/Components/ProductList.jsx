@@ -51,9 +51,15 @@ export default function ProductList({
            </b>
           }
           <br/>
-          <span className="w3-tag w3-theme w3-round-large">
-            #{value.category.replace(/\s/g,'')}
-          </span>
+          {value.tags.split(" ").map((tag, index) => (
+           <span
+            key={index + "-" + tag} 
+            className="w3-tag w3-theme w3-round" 
+            style={{marginRight: "10px"}}
+           > 
+            #{tag}
+           </span>
+          ))}
          </p>
         </div>
        </div>

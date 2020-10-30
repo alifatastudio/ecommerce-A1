@@ -1,21 +1,20 @@
 import React from 'react'
-import { useParams, useHistory } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import NumberFormat from "react-number-format"
 import LayoutStore from "../../Components/LayoutStore"
 import Loader from "../../Components/Loader"
+import SeeTogetherProduct from "../../Library/SeeTogetherProduct"
 import * as Faker from "../../Library/Faker"
 import GETPRODUCTBYSLUGSERVICE from "../../Services/GETPRODUCTBYSLUG"
 
 export default function ProductSLug(){
-	const { slug } = useParams()
-	const history = useHistory()
+ const { slug } = useParams()
+ const countwhoseetogether = SeeTogetherProduct()
  const [product, setProduct] = React.useState({...Faker.fakeproduct})
  const [imageShow, setImageShow] = React.useState(0)
- const [currentVariant, setCurrentVariant] = React.useState(0)
- const [totalOrder, setTotalOrder] = React.useState(1)
- const [message, setMessage] = React.useState({type: "", message: ""})
  const [productLoader, setProductLoader] = React.useState({...Faker.fakeloader}) 
-  
+ const WhatsAppLinkOrder = `https://api.whatsapp.com/send?phone=6282133170120&text=Permisi%20ka%2C%20mau%20beli%20`+ encodeURI(product.name + " " + product.code)
+
  const prevImageShow = () => {
  	const max = product.images.length -1
   setImageShow(prevState => {
@@ -35,55 +34,6 @@ export default function ProductSLug(){
  const onClickThubnail = idImageShow => () => {
 		setImageShow(idImageShow)
 	}
-
-	const onClickVariant = (variantId, imageShowId) => () => {
-		setCurrentVariant(variantId)
-		setImageShow(prevState => {
-			if(imageShowId === null) return prevState
-			return imageShowId
-		})
-	}
-
-	const addTotalOrder = () => {
-  const max = product.variants.variant[currentVariant].stock
-  setTotalOrder(prevState => {
-   if(prevState >= max) return max
-   return prevState+1
-  })
-	} 
-
-	const reduceTotalOrder = () => {
-  setTotalOrder(prevState => {
-   if(prevState < 1) return 1
-   return prevState-1
-  })
-	}
-
-	const onChangeTotalOrder = event => {
-  const v = event.target.value
-  const max = product.variants.variant[currentVariant].stock
-  setTotalOrder(prevState => {
-   if(v < 0) return 1
-   if(v > max) return max
-   return v
-  })
- }
-
- const onClickOrder = () => {
-  const url = `/order/${product.code}?variantId=${currentVariant}&totalOrder=${totalOrder}`
-  if(currentVariant === 0){
-  	setMessage({type: "error", message: "pilih variasi dulu yaa"})
-  	return null
-  } else if(totalOrder === 0){
-  	setMessage({type: "error", message: "order minimal 1 yaa ka : )"})
-  	return null
-  } else {
-  	setMessage({type: "success", message: "OK, kaka akan diarahkan ke halaman order selanjutnya"})
-  	history.push(url)
-
-  	return null
-  }
- }
 
  React.useEffect(() => {
  	async function POPULATEFIRSTDATA(){
@@ -130,11 +80,13 @@ export default function ProductSLug(){
  	<LayoutStore title={product.name}>
    {productLoader.isError? 
     <p style={{textAlign: "center" }}>{productLoader.errorMessage}</p>
-   :null}
+    :null
+   } 
 
  		{productLoader.isLoading ? <Loader />: 
     !productLoader.isError ?
      <div className="w3-row w3-animate-fading-x">
+      {/* IMAGES */}
    			<div className="w3-col m6">
    				<div className="w3-display-container">
    					{product.images.map(value => (
@@ -183,6 +135,7 @@ export default function ProductSLug(){
    			<div className="w3-col m6">
    				<div className="w3-container">
    					<h1>{product.name}</h1>
+        {/* PRICE */}
    					<p>
    						<i style={{fontSize: "18px"}}>
           {parseFloat(product.discount) > 0 ?
@@ -223,88 +176,75 @@ export default function ProductSLug(){
           </React.Fragment>
           :null
          }
-         <span className="w3-tag w3-theme w3-round-large">
-          #{product.category.replace(/\s/g,'')}
-         </span>
          <br/>
    			   <i className="fa fa-angle-double-right"></i> kode produk {product.code}
-   		    <br/><i className="fa fa-angle-double-right"></i> {product.variants.variant[currentVariant].stock > 0 ? "tersedia " + product.variants.variant[currentVariant].stock: <i style={{color: "red"}}>Sedang Tidak Tersedia, Sudah Terjual Habis</i>}
    					</p>
 
-   					<p><i className="fa fa-angle-double-right"></i> variasi {product.variants.name}</p>
-   					{product.variants.variant.map(value => {
-   						if(value.id === 0) return null
-   						return <span 
-   							key={value.id}
-          className={`w3-tag w3-card w3-hover-opacity ${currentVariant===value.id?"w3-theme":"w3-theme-white"}`}
-          style={{marginRight: "10px", marginBottom: "10px", cursor: "pointer"}}
-          onClick={onClickVariant(value.id, value.imageId)}
-         >
-         	{value.name}
-         </span>
-   					})}
+        {/* VARIANTS */}
+        {product.variants.map((variant, index) => (
+          <p style={{marginBottom: "15px"}} key={index + variant.name} >
+           <i className="fa fa-angle-double-right"></i> variasi <i>{variant.name}</i>
+           <br/>
+           {variant.variant.split(" ").map((aa, index) => (
+            <span
+             key={index + "-" + aa} 
+             className="w3-tag w3-theme w3-round" 
+             style={{marginRight: "10px"}}
+            >
+             {aa}
+            </span>
+           ))}
+          </p>
+        ))}
 
-   					<p><i className="fa fa-angle-double-right"></i> jumlah <i>(pilih variasi terlebih dahulu)</i></p>
-   					<button 
-         className="w3-button w3-border" 
-         style={{marginRight: "5px"}} 
-         onClick={reduceTotalOrder}
-   		   >
-         -
-        </button>
-        <input 
-         className="w3-button w3-border" 
-         type="number" 
-         value={totalOrder}
-         onChange={onChangeTotalOrder}
-         style={{marginRight: "5px", width: "95px"}}
-        />                
-        <button 
-         className="w3-button w3-border" 
-         style={{marginRight: "5px"}}
-         onClick={addTotalOrder}
-        >
-         +
-        </button> 
+        <br/>
 
-        <br/><br/>
-        {message.message.length > 0 ? 
-        	<React.Fragment>
-        		<div style={{textAlign: "center"}}>
-        			{message.type === "error"?
-        				<i style={{color: "red"}}>{message.message}</i>: null
-        			}
-        			{message.type === "succes"?
-        				<i style={{color: "green"}}>{message.message}</i>: null
-        			}
-        		</div>
-        		<br/>
-        	</React.Fragment>: null
-        }
-        <button
-         className="w3-button w3-theme" 
-         style={{ marginBottom: "10px", width: "100%"}}
-         onClick={onClickOrder}
-        >
-         Miliki Sekarang Juga <span role="img" aria-label="emoji">&#128526;</span>
-        </button>
+        {/* INVENTORY INFO */}
+        <p className="w3-panel w3-theme-l4 w3-round-large" style={{padding: "7px"}}>
+          <i className="fa fa-exclamation-triangle" style={{marginRight: "7px"}}></i>
+          {product.inventoryStatus}
+        </p>
+
+        {/* SEE TOGETHER INFO */}
+        <p className="w3-panel w3-theme-l4 w3-round-large" style={{padding: "7px"}}>
+          <i className="fa fa-eye" style={{marginRight: "7px"}}></i>
+          {countwhoseetogether} orang sedang melihat ini
+        </p>
+
+        <br/>
+        {/* BUTTON ORDER */}
         <a
-        	href={`https://api.whatsapp.com/send?phone=6282133170120&text=Permisi%20ka%2C%20mau%20beli%20produk%20`+encodeURI(product.name + " " + product.id + " " + product.variants.name + " " + product.variants.variant[currentVariant].name + " jumlah " + totalOrder)}
+         href={WhatsAppLinkOrder}
          target="_blank"
          rel="noopener noreferrer"
-         className="w3-button w3-green" 
+         className="w3-card-4 w3-button w3-green" 
          style={{ width: "100%"}}>
-          <i className="fa fa-whatsapp"></i> WhatsApp Admin
+          <i className="fa fa-whatsapp"></i> Miliki Sekarang Juga
         </a>  
         <p style={{marginTop: "5px"}}>
-   			<small><em>*Pesan langsung melalui WhatsApp (+62 821 3317 0120)</em></small>
-   		  </p>
+   			   <small><em>*Pesan langsung melalui WhatsApp (+62 821 3317 0120)</em></small>
+   		   </p>
+
+        {/* DESCRIPTION */}
         <p style={{whiteSpace: "pre-wrap"}}>
-          <span role="img" aria-label="emojis">&#128526; &#128522;</span> {product.description}
+         <span role="img" aria-label="emojis">&#128526; &#128522;</span> 
+         <br/>
+         {product.description}
         </p>
+
+        {/* TAGS */}
+        {product.tags.split(" ").map((tag, index) => (
+         <span
+          key={index + "-" + tag} 
+          className="w3-tag w3-theme w3-round" 
+          style={{marginRight: "10px"}}
+         > 
+          #{tag}
+         </span>
+        ))}
+
    				</div>
    			</div>
-
    		</div>
     :null
    }

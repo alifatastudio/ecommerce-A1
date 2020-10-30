@@ -1,5 +1,38 @@
+export const fakeappInfo = {
+	name: "",
+	slogan: "",
+	theme: "",
+	instagramName: "",
+	instagramUrl: "",
+	email: "",
+	logoUrl: "",
+	website: "",
+	whatsApp: ""
+}
+
+export const fakepayment = {
+	id: "",
+	name: "",
+	bankName: "",
+	bankCode: "",
+	rekeningNumber: "",
+	imageUrl: "",
+}
+
+export const fakebanner = {
+	id: "",
+	name: "",
+	imageUrl: "",
+}
+
+export const fakecategory = {
+	id: "",
+	name: "",
+	urlSlug: ""
+}
+
 export const fakeproduct = {
-	id: 0,
+	id: "",
 	code: "",
 	name: "",
 	slug: "",
@@ -8,12 +41,10 @@ export const fakeproduct = {
 	status: "",
 	brand: "",
 	category: "",
+	tags: "",
+	inventoryStatus: "",
 	description: "",
-	variants: {
-		id: 0,
-		name: "",
-		variant: [{id: 0, name: "", stock: 1, imageId: 0}]
-	},
+	variants: [{name: "", variant: ""}],
 	images: [{id: 0, url: ""}]
 }
 

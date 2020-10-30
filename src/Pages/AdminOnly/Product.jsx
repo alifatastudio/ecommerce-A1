@@ -63,10 +63,22 @@ export default function Product(){
 			value: values.brand
 		},
 		{
+			name: "tags",
+			label: "Tags",
+			type: "text",
+			value: values.tags
+		},
+		{
 			name: "description",
 			label: "Description",
 			type: "text",
 			value: values.description
+		},
+		{
+			name: "inventoryStatus",
+			label: "Inventory Status",
+			type: "text",
+			value: values.inventoryStatus
 		},
 	]
 
@@ -96,12 +108,6 @@ export default function Product(){
 		setValues({...values, [name]: event.target.value})
 	}
 
-	const valueImageChange = index => event => {
-		let x = values.images
-		x[index] = {id: index, url: event.target.value}
-		setValues({...values, images: [...x]})
-	}
-
 	const addValueImage = () => {
 		let x = values.images
 		const max = values.images.length
@@ -116,33 +122,40 @@ export default function Product(){
 		setValues({...values, images: [...x_]})
 	}
 
-	const valueVariantChange = (id, name) => event => {
-		let x = values.variants.variant
-		const y = values.variants.name
-		x[id] = {...x[id], [name]: event.target.value}
-		setValues({...values, variants: {name: y, variant: [...x]}})
+	const valueImageChange = index => event => {
+		let x = values.images
+		x[index] = {id: index, url: event.target.value}
+		setValues({...values, images: [...x]})
 	}
 
-	const valueNameVariantChange = event => {
-		const x = values.variants.variant
-		const y = event.target.value
-		setValues({...values, variants: {name: y, variant: [...x]}})
+	const addVariant = () => {
+		setValues(prevState => ({
+			...prevState,
+			variants: [
+				...prevState.variants,
+				{name: '', variant: ""}
+			]
+		}))
 	}
 
-	const addValueVariant = () => {
-		let x = values.variants.variant
-		const max = values.variants.variant.length
-		const y = values.variants.name
-		x[max] = {id: max, name: "", stock: 0, imageId: 0}
-		setValues({...values, variants: {name: y, variant: [...x]}})
+	const reduceVariant = () => {
+		setValues(prevState => {
+			const x = prevState.variants.length - 1
+			const x_ = prevState.variants.slice(0, x)
+			return {...prevState, variants: [...x_]}
+		})
 	}
 
-	const reduceValueVariant = () => {
-		let x = values.variants.variant
-		const last = values.variants.variant.length - 1
-		const y = values.variants.name
-		const x_ = x.filter(value => value.id !== last)
-		setValues({...values, variants: {name: y, variant: [...x_]}})
+	const onChangeValueNameVariant = index => event => {
+		let x = values
+		x.variants[index].name = event.target.value
+		setValues({...x})
+	}
+
+	const onChangeValueVariant = index => event => {
+		let x = values
+		x.variants[index].variant = event.target.value
+		setValues({...x})
 	}
 
 	const validate = () => {
@@ -205,7 +218,7 @@ export default function Product(){
 
 		POPULATEFIRSTDATA()
 	}, [])
-	
+
 	const inputModifier = (
 		<div>
 			{input.map(value => (
@@ -231,74 +244,68 @@ export default function Product(){
 		  	}
 	  	</p>
 			))}
+		 
+		 <div style={{height: "45px"}} />
+		 <hr/>
+		 <div>
+	  	<label>Variants New</label>
+	  	<button 
+	  		className="w3-btn w3-green" 
+	  		style={{marginLeft: "10px"}}
+	  		onClick={addVariant}
+	  	>
+					 tambah
+				</button>
+				<button 
+	  		className="w3-btn w3-red" 
+	  		style={{marginLeft: "10px"}}
+	  		onClick={reduceVariant}
+	  		disabled={values.variants.length <= 0 ? true: false}
+	  	>
+					 kurangi
+				</button>
 
-		 <div style={{height: "35px"}} />
-	  <div>	
-	  	<label>Variants</label>
+				<div>
+					{values.variants.map((value, index) => (
+						<div key={"variant-"+ index} >
+							<div className="w3-row">
+								<p className="w3-half">
+									<input 
+						  		className="w3-input" 
+						  		type="text"
+						  		placeholder="Nama variasi"
+						  		onChange={onChangeValueNameVariant(index)}
+						  	/>
+					  	</p>
+					  </div>
+					 	<div className="w3-row-padding">
+				 			<p className="w3-half">
+						  	<input 
+						  		className="w3-input" 
+						  		type="text"
+						  		placeholder="Tambah variasi"
+						  		value={value.variant}
+						  		onChange={onChangeValueVariant(index)}
+						  	/>
+					  	</p>
+				  	</div>
 
-				<p>
-		  	<label htmlFor="variantName">Variant</label>
-		  	<button 
-		  		className="w3-btn w3-green" 
-		  		style={{marginLeft: "10px"}}
-		  		onClick={addValueVariant}
-		  	>
-						 tambah
-					</button>
-					<button 
-		  		className="w3-btn w3-red" 
-		  		style={{marginLeft: "10px"}}
-		  		onClick={reduceValueVariant}
-		  		disabled={values.variants.variant.length <= 1 ? true: false}
-		  	>
-						 kurangi
-					</button>
-		  	<input 
-		  		className="w3-input" 
-		  		type="text"
-		  		name="variantName"
-		  		placeholder="variantName"
-		  		value={values.variants.name}
-		  		onChange={valueNameVariantChange}
-		  	/>
-	  	</p>
-
-	  	{values.variants.variant.map((value, index) => (
-	  		<div className="w3-row-padding" key={value.id}>
-	  			<p className="w3-col w3-third">
-			  		<label>name index {value.id}</label>
-	  				<input 
-				  		className="w3-input"
-				  		name={value.id}
-				  		value={value.name}
-				  		onChange={valueVariantChange(value.id, "name")}
-				  	/>
-			  	</p>
-			  	<p className="w3-col w3-third">
-			  		<label>stock index {value.id}</label>
-	  				<input 
-				  		className="w3-input"
-				  		type="number"
-				  		name={value.id}
-				  		value={value.stock}
-				  		onChange={valueVariantChange(value.id, "stock")}
-				  	/>
-			  	</p>
-			  	<p className="w3-col w3-third">
-			  		<label>image id {value.id}</label>
-	  				<input 
-				  		className="w3-input"
-				  		type="number"
-				  		name={value.id}
-				  		value={value.imageId}
-				  		onChange={valueVariantChange(value.id, "imageId")}
-				  	/>
-			  	</p>
-	  		</div>
-	  	))}
-  	</div>
+				  	{value.variant.split(" ").map(aa => (
+			  			<span
+			  				key={index + "-" + aa} 
+				  			className="w3-tag w3-theme w3-round" 
+				  			style={{marginRight: "10px"}}
+				  		>
+        	{aa}
+       	</span>
+				  	))}
+						</div>
+					))}
+				</div>
+		 </div>
 
 		 <div style={{height: "45px"}} />
+		 <hr/>
 	  <div>
 	  	<label >Images</label>
 	  	<button 
@@ -319,7 +326,7 @@ export default function Product(){
 
 	  	{values.images.map((value, index) => (
 	  		<p key={value.id} >
-		  		<label>url index {value.id}</label>
+		  		<label>url {value.id + 1}</label>
   				<input 
 			  		className="w3-input" 
 			  		name={value.id}
@@ -342,7 +349,6 @@ export default function Product(){
 					Tambah Produk
 				</button>
 				<div style={{height: "25px"}} />
-
 				
 				<div className="w3-container w3-text-grey">
 	    <p>{allProduct.length} items</p>
