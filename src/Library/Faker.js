@@ -1,4 +1,5 @@
-export const fakeappInfo = {
+export const fakeappinfo = {
+	id: "",
 	name: "",
 	slogan: "",
 	theme: "",
@@ -39,7 +40,6 @@ export const fakeproduct = {
 	price: "",
 	discount: 0,
 	status: "",
-	brand: "",
 	category: "",
 	tags: "",
 	inventoryStatus: "",

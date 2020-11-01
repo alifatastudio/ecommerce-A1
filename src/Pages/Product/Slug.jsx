@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams } from "react-router-dom"
 import NumberFormat from "react-number-format"
+import { ContextApp } from "../../Context/App"
 import LayoutStore from "../../Components/LayoutStore"
 import Loader from "../../Components/Loader"
 import SeeTogetherProduct from "../../Library/SeeTogetherProduct"
@@ -9,11 +10,12 @@ import GETPRODUCTBYSLUGSERVICE from "../../Services/GETPRODUCTBYSLUG"
 
 export default function ProductSLug(){
  const { slug } = useParams()
+ const App = React.useContext(ContextApp)
  const countwhoseetogether = SeeTogetherProduct()
  const [product, setProduct] = React.useState({...Faker.fakeproduct})
  const [imageShow, setImageShow] = React.useState(0)
  const [productLoader, setProductLoader] = React.useState({...Faker.fakeloader}) 
- const WhatsAppLinkOrder = `https://api.whatsapp.com/send?phone=6282133170120&text=Permisi%20ka%2C%20mau%20beli%20`+ encodeURI(product.name + " " + product.code)
+ const WhatsAppLinkOrder = `https://api.whatsapp.com/send?phone=${App.appInfo.whatsApp}&text=Permisi%20ka%2C%20mau%20beli%20`+ encodeURI(product.name + " " + product.code)
 
  const prevImageShow = () => {
  	const max = product.images.length -1
@@ -222,7 +224,7 @@ export default function ProductSLug(){
           <i className="fa fa-whatsapp"></i> Miliki Sekarang Juga
         </a>  
         <p style={{marginTop: "5px"}}>
-   			   <small><em>*Pesan langsung melalui WhatsApp (+62 821 3317 0120)</em></small>
+   			   <small><em>*Pesan langsung melalui WhatsApp ( +<NumberFormat value={App.appInfo.whatsApp} displayType={'text'} format="## ### #### ####" /> )</em></small>
    		   </p>
 
         {/* DESCRIPTION */}

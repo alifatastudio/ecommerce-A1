@@ -2,16 +2,15 @@ import React from "react"
 import { Link } from "react-router-dom"
 import Helmet from "react-helmet"
 import _ from "lodash"
+import { ContextApp } from "../Context/App"
 import Footer from "./Footer"
 import "./LayoutStore.css"
-import * as Faker from "../Library/Faker"
-import GETAPPINFOSERVICE from "../Services/GETAPPINFO"
 import GETALLCATEGORYSERVICE from "../Services/GETALLCATEGORY"
 
 export default function LayoutStore(props){
 	const { title } = props
+	const App = React.useContext(ContextApp)
 	const [sidebarShow, setSidebarShow] = React.useState(false)
-	const [appInfo, setAppInfo] = React.useState({...Faker.fakeappInfo})
 	const [allCategory, setAllCategory] = React.useState([])
 
 	const toggleSidebar = () => {
@@ -21,9 +20,6 @@ export default function LayoutStore(props){
 	React.useEffect(() => {
 		async function POPULATEFIRSTDATA(){
 			try{
-				const appInfo = await GETAPPINFOSERVICE()
-				setAppInfo({...appInfo})
-
 				const categories = await GETALLCATEGORYSERVICE()	
 				const y = _.sortBy(categories, "name")
 				setAllCategory([...y])
@@ -38,7 +34,7 @@ export default function LayoutStore(props){
 	return (
 		<div className="w3-auto layout-wrapper">
 			<Helmet>
-    <title>{appInfo.name + " | " + title}</title>
+    <title>{App.appInfo.name + " | " + title}</title>
     <meta name="description" content="no content" />
    </Helmet>
 
@@ -47,7 +43,7 @@ export default function LayoutStore(props){
 		    <i onClick={toggleSidebar} className="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
 	    	<h3 className="w3-wide">
 		    	<Link to="/">
-		    		<b className="brand">ELOGIE</b>
+		    		<b className="brand">{App.appInfo.name.toUpperCase()}</b>
 		    	</Link>
 	    	</h3>
 		  </div>
@@ -92,7 +88,7 @@ export default function LayoutStore(props){
 			 {props.children}
 
 			 <div style={{height: "55px"}} />
- 			<Footer appinfo={appInfo} />
+ 			<Footer />
 			</div>
 		</div>
 	)

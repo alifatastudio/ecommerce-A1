@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch, Route } from "react-router-dom";
 import Home from "./Pages/Home";
+import ContextProviderApp from "./Context/App"
 
 import AdminOnlyProduct from "./Pages/AdminOnly/Product";
 
@@ -9,11 +10,9 @@ import AdminOnlyBanner from "./Pages/AdminOnly/Banner";
 import AdminOnlyPayment from "./Pages/AdminOnly/Payment";
 import AdminOnlySetting from "./Pages/AdminOnly/Setting";
 import AdminOnlyAppVersion from "./Pages/AdminOnly/AppVersion";
-import BlogMetodePembayaran from "./Pages/Blog/MetodePembayaran";
-
+import Payment from "./Pages/Payment";
 import CategorySlug from "./Pages/Category/Slug";
 import ProductSlug from "./Pages/Product/Slug";
-
 import NotFound from "./Pages/404"
 import "./App.css"
 
@@ -51,9 +50,9 @@ function App() {
 			comp: <AdminOnlyAppVersion />
 		},
 		{
-			name: "BlogMetodePembayaran",
-			url: "/blog/metode-pembayaran",
-			comp: <BlogMetodePembayaran />
+			name: "Payment",
+			url: "/payment",
+			comp: <Payment />
 		},
 		{
 			name: "ProductSlug",
@@ -83,9 +82,11 @@ function App() {
 	]
 
  return (
-		<Switch>
-			{router.map(value => <Route key={value.name} exact={value.url === "/"? true: false} path={value.url} children={value.comp} />)}
- 	</Switch>
+ 	<ContextProviderApp>
+			<Switch>
+				{router.map(value => <Route key={value.name} exact={value.url === "/"? true: false} path={value.url} children={value.comp} />)}
+	 	</Switch>
+ 	</ContextProviderApp>
  )
 }
 

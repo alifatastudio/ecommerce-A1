@@ -1,12 +1,12 @@
 import React from "react"
 import _ from "lodash"
-import LayoutStore from "../../Components/LayoutStore"
-import * as Faker from "../../Library/Faker"
-import GETAPPINFOSERVICE from "../../Services/GETAPPINFO"
-import GETALLPAYMENTSERVICE from "../../Services/GETALLPAYMENT"
+import LayoutStore from "../Components/LayoutStore"
+import * as Faker from "../Library/Faker"
+import GETAPPINFOSERVICE from "../Services/GETAPPINFO"
+import GETALLPAYMENTSERVICE from "../Services/GETALLPAYMENT"
 
 export default function MetodePembayaran(){
- const [appInfo, setAppInfo] = React.useState({...Faker.fakeappInfo})
+ const [appInfo, setAppInfo] = React.useState({...Faker.fakeappinfo})
  const [allPayment, setAllPayment] = React.useState([])
 
  React.useEffect(() => {

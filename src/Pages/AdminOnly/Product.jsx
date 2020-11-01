@@ -5,10 +5,12 @@ import GETALLPRODUCTSERVICE from "../../Services/GETALLPRODUCT"
 import CREATEPRODUCTSERVICE from "../../Services/CREATEPRODUCT"
 import UPDATEPRODUCTSERVICE from "../../Services/UPDATEPRODUCT"
 import DELETEPRODUCTSERVICE from "../../Services/DELETEPRODUCT"
+import GETALLCATEGORYSERVICE from "../../Services/GETALLCATEGORY"
 
 export default function Product(){
 	const [values, setValues] = React.useState({...Faker.fakeproduct})
 	const [allProduct, setAllProduct] = React.useState([])
+	const [allCategory, setAllCategory] = React.useState([])
 	const [modalCreate, setModalCreate] = React.useState({...Faker.fakemodalcreate})
 	const [modalEdit, setModalEdit] = React.useState({...Faker.fakemodaledit})
 	const [modalDelete, setModalDelete] = React.useState({...Faker.fakemodaldelete})
@@ -17,66 +19,63 @@ export default function Product(){
 		{
 			name: "code",
 			label: "Code",
+			placeholder: "BATP-XXX",
 			type: "text",
 			value: values.code
 		},
 		{
 			name: "name",
 			label: "Name",
+			placeholder: "Basic Tees...",
 			type: "text",
 			value: values.name
 		},
 		{
 			name: "slug",
 			label: "Slug",
+			placeholder: "basic-tees-cool",
 			type: "text",
 			value: values.slug
 		},
 		{
 			name: "price",
 			label: "Price",
+			placeholder: "999",
 			type: "number",
 			value: values.price
 		},
 		{
 			name: "discount",
 			label: "Discount",
+			placeholder: "25",
 			type: "number",
 			value: values.discount
 		},
 		{
 			name: "status",
 			label: "Status",
+			placeholder: "Sale off 25%, Sold Out, New Arrival, etc",
 			type: "text",
 			value: values.status
 		},
 		{
-			name: "category",
-			label: "Category",
-			type: "text",
-			value: values.category
-		},
-		{
-			name: "brand",
-			label: "Brand",
-			type: "text",
-			value: values.brand
-		},
-		{
 			name: "tags",
 			label: "Tags",
+			placeholder: "BasicTees Cool Diskon etc",
 			type: "text",
 			value: values.tags
 		},
 		{
 			name: "description",
 			label: "Description",
+			placeholder: "Best basic tees....",
 			type: "text",
 			value: values.description
 		},
 		{
 			name: "inventoryStatus",
 			label: "Inventory Status",
+			placeholder: "Instock, Limited edition, etc",
 			type: "text",
 			value: values.inventoryStatus
 		},
@@ -210,7 +209,9 @@ export default function Product(){
 		async function POPULATEFIRSTDATA(){
 			try{
 				const x = await GETALLPRODUCTSERVICE()
+				const y = await GETALLCATEGORYSERVICE()
 				setAllProduct([...x])
+				setAllCategory([...y])
 			} catch(error){
 				console.log(error)
 			}
@@ -218,7 +219,7 @@ export default function Product(){
 
 		POPULATEFIRSTDATA()
 	}, [])
-
+	console.log(values)
 	const inputModifier = (
 		<div>
 			{input.map(value => (
@@ -238,23 +239,34 @@ export default function Product(){
 				  		type={value.type}
 				  		id={value.name}
 				  		name={value.name}
+				  		placeholder={value.placeholder}
 				  		value={value.value}
 				  		onChange={valueChange(value.name)}
 				  	/>
 		  	}
 	  	</p>
 			))}
-		 
+		 	
+		 <div style={{height: "45px"}} />
+		 <hr/>
+		 <label>category</label>
+		 <select className="w3-select" name="category" defaultValue={values.category} onChange={valueChange("category")}>
+		  <option value="" disabled>Choose your category</option>
+		  {allCategory.map(value => (
+		  	<option key={value.id} value={value.urlSlug}>{value.name}</option>
+		  ))}
+			</select>
+
 		 <div style={{height: "45px"}} />
 		 <hr/>
 		 <div>
-	  	<label>Variants New</label>
+	  	<label>variants</label>
 	  	<button 
 	  		className="w3-btn w3-green" 
 	  		style={{marginLeft: "10px"}}
 	  		onClick={addVariant}
 	  	>
-					 tambah
+					 +
 				</button>
 				<button 
 	  		className="w3-btn w3-red" 
@@ -262,7 +274,7 @@ export default function Product(){
 	  		onClick={reduceVariant}
 	  		disabled={values.variants.length <= 0 ? true: false}
 	  	>
-					 kurangi
+					 -
 				</button>
 
 				<div>
@@ -273,7 +285,7 @@ export default function Product(){
 									<input 
 						  		className="w3-input" 
 						  		type="text"
-						  		placeholder="Nama variasi"
+						  		placeholder="Size"
 						  		onChange={onChangeValueNameVariant(index)}
 						  	/>
 					  	</p>
@@ -283,7 +295,7 @@ export default function Product(){
 						  	<input 
 						  		className="w3-input" 
 						  		type="text"
-						  		placeholder="Tambah variasi"
+						  		placeholder="S M L XL XXL etc"
 						  		value={value.variant}
 						  		onChange={onChangeValueVariant(index)}
 						  	/>
@@ -307,13 +319,13 @@ export default function Product(){
 		 <div style={{height: "45px"}} />
 		 <hr/>
 	  <div>
-	  	<label >Images</label>
+	  	<label >images <i>(using url)</i></label>
 	  	<button 
 	  		className="w3-btn w3-green" 
 	  		style={{marginLeft: "10px"}}
 	  		onClick={addValueImage}
 	  	>
-					 tambah
+					 +
 				</button>
 				<button 
 	  		className="w3-btn w3-red" 
@@ -321,7 +333,7 @@ export default function Product(){
 	  		onClick={reduceValueImage}
 	  		disabled={values.images.length <= 1 ? true: false}
 	  	>
-					 kurangi
+					 -
 				</button>
 
 	  	{values.images.map((value, index) => (
@@ -330,6 +342,7 @@ export default function Product(){
   				<input 
 			  		className="w3-input" 
 			  		name={value.id}
+			  		placeholder="https://domain.com/basic-tees-01.jpg"
 			  		value={value.url}
 			  		onChange={valueImageChange(index)}
 			  	/>

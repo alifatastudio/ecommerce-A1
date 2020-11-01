@@ -2,9 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 import NumberFormat from "react-number-format"
 
-export default function ProductList({
-	products
-}){
+export default function ProductList({products}){
 	
 	return (
 		<div className="w3-animate-fading-x">
@@ -55,7 +53,7 @@ export default function ProductList({
            <span
             key={index + "-" + tag} 
             className="w3-tag w3-theme w3-round" 
-            style={{marginRight: "10px"}}
+            style={{fontSize: "12px", marginRight: "5px", marginBottom: "5px"}}
            > 
             #{tag}
            </span>
